@@ -27,10 +27,11 @@
 	>
 		{#each data as item}
 			<div class="song" style="text-align: center;">
-				<h2>{item.title}</h2>
-				<p>{item.artist}</p>
-				<p>{item.link}</p>
-				<p>{item.date}</p>
+				<h2>{item.TrackName}</h2>
+				<p>{item.ArtistName}</p>
+				<a href={item.Link}>Spotify link</a>
+				<p>{item.ReleaseDate}</p>
+				<p>{item.TrackOrAlbum}</p>
 			</div>
 		{/each}
 	</div>
