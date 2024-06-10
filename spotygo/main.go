@@ -168,7 +168,7 @@ func getFollowedArtists() Artists {
 		fmt.Println("Error creating request:", err)
 		return artists
 	}
-	req.Header.Set("Authorization", "Bearer BQDQFbp1CSX71YgjXiLL8XMFL-pX7-f7hG2fddHCNY_OOgJmB9FnsZwvT4ylNb3lOW43GSupolAOXL9EVOxSoQ9RvLluilWlvvgBbYIBXwgFgIWW8zgEdtM9xLvU4nTSpNtF3NVJzfwo5lLAV4j9hLWIGAOFPEPcRUWM2I-SaOyGKFIT8BgY")
+	req.Header.Set("Authorization", "Bearer "FIX_THIS)
 
 	client := &http.Client{}
 	resp, err := client.Do(req)
@@ -201,7 +201,7 @@ func getTracksForArtist(artist_name string) []FeedItem {
 		fmt.Println("Error creating request:", err)
 		return feedItems
 	}
-	req.Header.Set("Authorization", "Bearer BQDQFbp1CSX71YgjXiLL8XMFL-pX7-f7hG2fddHCNY_OOgJmB9FnsZwvT4ylNb3lOW43GSupolAOXL9EVOxSoQ9RvLluilWlvvgBbYIBXwgFgIWW8zgEdtM9xLvU4nTSpNtF3NVJzfwo5lLAV4j9hLWIGAOFPEPcRUWM2I-SaOyGKFIT8BgY")
+	req.Header.Set("Authorization", "Bearer "FIX_THIS)
 
 	client := &http.Client{}
 	resp, err := client.Do(req)
